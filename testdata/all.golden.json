@@ -1,0 +1,382 @@
+[
+  {
+    "file_path": "src/all.rs",
+    "type": "use",
+    "content": "use std::io::{self, Read};",
+    "metadata": {
+      "end_line": "2",
+      "name": "use std::io::{self, Read};",
+      "namespace": "",
+      "start_line": "2"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "struct",
+    "content": "/// A point.\n#[derive(Debug, Clone)]\npub struct Point\u003cT\u003e {\n    pub x: T,\n    y: T,\n}",
+    "metadata": {
+      "attributes": "#[derive(Debug, Clone)]",
+      "end_line": "9",
+      "fqn": "Point",
+      "name": "Point",
+      "namespace": "",
+      "start_line": "4",
+      "type_params": "\u003cT\u003e",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "struct",
+    "content": "pub struct Unit(i32);",
+    "metadata": {
+      "end_line": "11",
+      "fqn": "Unit",
+      "name": "Unit",
+      "namespace": "",
+      "start_line": "11",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "enum",
+    "content": "pub enum Shape {\n    Dot,\n    Circle(f64),\n}",
+    "metadata": {
+      "end_line": "16",
+      "fqn": "Shape",
+      "name": "Shape",
+      "namespace": "",
+      "start_line": "13",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "union",
+    "content": "pub union Bits {\n    a: u32,\n}",
+    "metadata": {
+      "end_line": "20",
+      "fqn": "Bits",
+      "name": "Bits",
+      "namespace": "",
+      "start_line": "18",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "constant",
+    "content": "pub const MAX: usize = 10;",
+    "metadata": {
+      "end_line": "22",
+      "fqn": "MAX",
+      "name": "MAX",
+      "namespace": "",
+      "start_line": "22",
+      "type": "usize",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "static",
+    "content": "static mut COUNTER: i32 = 0;",
+    "metadata": {
+      "end_line": "23",
+      "fqn": "COUNTER",
+      "name": "COUNTER",
+      "namespace": "",
+      "start_line": "23",
+      "type": "i32"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "type",
+    "content": "type Id = u64;",
+    "metadata": {
+      "end_line": "24",
+      "fqn": "Id",
+      "name": "Id",
+      "namespace": "",
+      "start_line": "24",
+      "type": "u64"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "macro",
+    "content": "macro_rules! twice {\n    ($e:expr) =\u003e { $e * 2 };\n}",
+    "metadata": {
+      "end_line": "28",
+      "fqn": "twice",
+      "name": "twice",
+      "namespace": "",
+      "start_line": "26"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "trait",
+    "content": "/// Things with an area.\npub trait Area: Send",
+    "metadata": {
+      "end_line": "31",
+      "extends": "Send",
+      "fqn": "Area",
+      "name": "Area",
+      "namespace": "",
+      "start_line": "30",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "constant",
+    "content": "const SIDES: u32;",
+    "metadata": {
+      "end_line": "32",
+      "fqn": "Area::SIDES",
+      "name": "SIDES",
+      "namespace": "",
+      "receiver": "Area",
+      "start_line": "32",
+      "type": "u32"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "type",
+    "content": "type Unit;",
+    "metadata": {
+      "end_line": "33",
+      "fqn": "Area::Unit",
+      "name": "Unit",
+      "namespace": "",
+      "receiver": "Area",
+      "start_line": "33"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "method",
+    "content": "fn area(\u0026self) -\u003e f64;",
+    "metadata": {
+      "bodyless": "true",
+      "end_line": "35",
+      "fqn": "Area::area",
+      "name": "area",
+      "namespace": "",
+      "params": "(\u0026self)",
+      "receiver": "Area",
+      "return_type": "f64",
+      "signature": "fn area(\u0026self) -\u003e f64",
+      "start_line": "35"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "method",
+    "content": "/// Default body.\n    fn describe(\u0026self) -\u003e String {\n        format!(\"{}\", self.area())\n    }",
+    "metadata": {
+      "end_line": "40",
+      "fqn": "Area::describe",
+      "name": "describe",
+      "namespace": "",
+      "params": "(\u0026self)",
+      "receiver": "Area",
+      "return_type": "String",
+      "signature": "fn describe(\u0026self) -\u003e String",
+      "start_line": "37"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "impl",
+    "content": "impl\u003cT\u003e Point\u003cT\u003e",
+    "metadata": {
+      "end_line": "43",
+      "name": "Point\u003cT\u003e",
+      "namespace": "",
+      "start_line": "43",
+      "type": "Point\u003cT\u003e",
+      "type_params": "\u003cT\u003e"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "method",
+    "content": "/// Build one.\n    pub async fn new(x: T, y: T) -\u003e Self {\n        Point { x, y }\n    }",
+    "metadata": {
+      "end_line": "47",
+      "fqn": "Point::new",
+      "modifiers": "async",
+      "name": "new",
+      "namespace": "",
+      "params": "(x: T, y: T)",
+      "receiver": "Point",
+      "return_type": "Self",
+      "signature": "pub async fn new(x: T, y: T) -\u003e Self",
+      "start_line": "44",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "impl",
+    "content": "impl Area for Shape",
+    "metadata": {
+      "end_line": "50",
+      "name": "Area for Shape",
+      "namespace": "",
+      "start_line": "50",
+      "trait": "Area",
+      "type": "Shape"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "constant",
+    "content": "const SIDES: u32 = 0;",
+    "metadata": {
+      "end_line": "51",
+      "fqn": "Shape::SIDES",
+      "name": "SIDES",
+      "namespace": "",
+      "receiver": "Shape",
+      "start_line": "51",
+      "type": "u32"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "type",
+    "content": "type Unit = f64;",
+    "metadata": {
+      "end_line": "52",
+      "fqn": "Shape::Unit",
+      "name": "Unit",
+      "namespace": "",
+      "receiver": "Shape",
+      "start_line": "52",
+      "type": "f64"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "method",
+    "content": "fn area(\u0026self) -\u003e f64 {\n        0.0\n    }",
+    "metadata": {
+      "end_line": "56",
+      "fqn": "Shape::area",
+      "name": "area",
+      "namespace": "",
+      "params": "(\u0026self)",
+      "receiver": "Shape",
+      "return_type": "f64",
+      "signature": "fn area(\u0026self) -\u003e f64",
+      "start_line": "54"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "module",
+    "content": "pub mod geometry",
+    "metadata": {
+      "end_line": "59",
+      "fqn": "geometry",
+      "name": "geometry",
+      "namespace": "",
+      "start_line": "59",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "function",
+    "content": "#[inline]\n    pub fn dist(a: f64, b: f64) -\u003e f64 {\n        (a - b).abs()\n    }",
+    "metadata": {
+      "attributes": "#[inline]",
+      "end_line": "63",
+      "fqn": "geometry::dist",
+      "name": "dist",
+      "namespace": "geometry",
+      "params": "(a: f64, b: f64)",
+      "return_type": "f64",
+      "signature": "pub fn dist(a: f64, b: f64) -\u003e f64",
+      "start_line": "60",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "module",
+    "content": "mod ext;",
+    "metadata": {
+      "end_line": "66",
+      "fqn": "ext",
+      "name": "ext",
+      "namespace": "",
+      "start_line": "66"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "module",
+    "content": "#[cfg(test)]\nmod tests",
+    "metadata": {
+      "attributes": "#[cfg(test)]",
+      "end_line": "69",
+      "fqn": "tests",
+      "name": "tests",
+      "namespace": "",
+      "start_line": "68"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "function",
+    "content": "#[test]\n    fn it_works() {}",
+    "metadata": {
+      "attributes": "#[test]",
+      "end_line": "71",
+      "fqn": "tests::it_works",
+      "name": "it_works",
+      "namespace": "tests",
+      "params": "()",
+      "signature": "fn it_works()",
+      "start_line": "70"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "function",
+    "content": "pub unsafe extern \"C\" fn ffi(a: i32) -\u003e i32 {\n    a\n}",
+    "metadata": {
+      "end_line": "76",
+      "fqn": "ffi",
+      "modifiers": "unsafe extern \"C\"",
+      "name": "ffi",
+      "namespace": "",
+      "params": "(a: i32)",
+      "return_type": "i32",
+      "signature": "pub unsafe extern \"C\" fn ffi(a: i32) -\u003e i32",
+      "start_line": "74",
+      "visibility": "pub"
+    }
+  },
+  {
+    "file_path": "src/all.rs",
+    "type": "function",
+    "content": "fn main() {\n    println!(\"hi\");\n}",
+    "metadata": {
+      "end_line": "80",
+      "fqn": "main",
+      "name": "main",
+      "namespace": "",
+      "params": "()",
+      "signature": "fn main()",
+      "start_line": "78"
+    }
+  }
+]
