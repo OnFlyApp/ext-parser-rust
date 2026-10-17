@@ -1,0 +1,40 @@
+[
+  {
+    "file_path": "src/lib.rs",
+    "type": "struct",
+    "content": "// A plain comment.\n#[derive(Debug)]\nstruct Cfg { v: u8 }",
+    "metadata": {
+      "attributes": "#[derive(Debug)]",
+      "end_line": "3",
+      "fqn": "Cfg",
+      "name": "Cfg",
+      "namespace": "",
+      "start_line": "1"
+    }
+  },
+  {
+    "file_path": "src/lib.rs",
+    "type": "statement",
+    "content": "x = 1;",
+    "metadata": {
+      "end_line": "5",
+      "name": "statements",
+      "namespace": "",
+      "start_line": "5"
+    }
+  },
+  {
+    "file_path": "src/lib.rs",
+    "type": "function",
+    "content": "fn after() {}",
+    "metadata": {
+      "end_line": "6",
+      "fqn": "after",
+      "name": "after",
+      "namespace": "",
+      "params": "()",
+      "signature": "fn after()",
+      "start_line": "6"
+    }
+  }
+]
